@@ -11,4 +11,9 @@ $password = 'YOUR_DB_PASSWORD';
 $stripe_api_key = 'sk_test_XXXXX'; 
 
 $conn = mysqli_connect($host, $username, $password, $db_name);
+
+// config.sample.php
+$mail_host = 'smtp.gmail.com';
+$mail_user = 'YOUR_EMAIL@gmail.com';
+$mail_pass = 'YOUR_APP_PASSWORD';
 ?>
