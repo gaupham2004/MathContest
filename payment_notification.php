@@ -55,7 +55,7 @@ if ($transaction_id) {
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
             $mail->Username   = 'gaupham2004@gmail.com';
-            $mail->Password   = 'slxq ddnn djlm jbcq'; 
+            $mail->Password   = 'your-new-app-password'; 
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
