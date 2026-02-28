@@ -1,6 +1,6 @@
 # --- Database & Secrets ---
 # Block your actual connection file so your DB password stays local
-config.php
+pdo.php
 db_connect.php
 .env
 
