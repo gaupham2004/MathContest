@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type = "date"] {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+select{
+  width: 97%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.btn {
+  background-color: #d60000;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b80000;
+}
+
+.message {
+  color: red;
+  font-weight: bold;
+  margin: 15px auto;
+  text-align: center;
+}
+input[type="text"].inputFee {
+  width: 60px;
+  padding: 6px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+}

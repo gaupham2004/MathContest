@@ -1,0 +1,21 @@
+#contact {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact h1 {
+  text-align: center;
+  color: #135592;
+  margin-bottom: 20px;
+}
+
+#contact img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}

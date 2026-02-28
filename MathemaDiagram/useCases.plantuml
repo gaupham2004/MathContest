@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Visitor
+actor RegisteredUser
+actor Admin
+
+rectangle "Mathema Contest Platform" {
+  Visitor --> (View Contest Info)
+  Visitor --> (Register for Individual)
+  Visitor --> (Register for Team)
+  Visitor --> (Login)
+
+  RegisteredUser --> (Take Official Test) : official-test.php
+  RegisteredUser --> (Take Training Test) : training-test.php
+  RegisteredUser --> (Post Forum Topic)
+  RegisteredUser --> (Reply to Forum)
+  RegisteredUser --> (View Leaderboard) : leaderboard.php
+  RegisteredUser --> (Download PDF Resources) : resources.php
+  RegisteredUser --> (View Profile) : profile-page.php
+  RegisteredUser --> (View Result) : result.php
+  RegisteredUser --> (Access Dashboard) : dashboard.php
+  RegisteredUser --> (Upload Resources) : upload-resource.php
+
+  Admin --> (Upload Tests) : admin-upload.php
+  Admin --> (Upload Resources) : upload-resource.php
+  Admin --> (Approve Resources) : review-pending.php
+}
+@enduml

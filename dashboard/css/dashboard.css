@@ -1,0 +1,83 @@
+.welcome-box {
+  background: linear-gradient(to right, #1ab394, #179b81);
+  padding: 25px 30px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.welcome-box h1 {
+  font-size: 26px;
+}
+
+.welcome-box .subtext {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #e0f7f4;
+}
+
+.account-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  background: #fff;
+  border-left: 4px solid #1ab394;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 220px;
+}
+
+.info-item label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.info-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.box h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #444;
+}
+
+.action-button {
+  background-color: #1ab394;
+  color: white;
+  padding: 10px 25px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action-button:hover {
+  background-color: #179b81;
+}

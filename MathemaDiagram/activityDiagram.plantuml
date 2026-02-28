@@ -1,0 +1,65 @@
+@startuml activityDiagram
+start
+
+:Visit welcome.html;
+
+if (Click Home?) then (yes)
+  :Go to index.html;
+else
+  :Go to login.php;
+
+  if (Has account?) then (yes)
+    :Login successful;
+    :Go to index.html;
+  else
+    :Go to register.php;
+    :Fill and submit form;
+    :Trigger payment_notification.php;
+    :Return to login.php;
+    :Login successful;
+    :Go to index.html;
+  endif
+endif
+
+:View contest info and categories;
+
+if (Already registered?) then (yes)
+  :Explore;
+else
+  :Choose category (category.html);
+  :Go to register.php;
+  :Complete registration;
+  :Trigger payment_notification.php;
+endif
+
+:Optional: View info.html;
+:Optional: View contact.html;
+:Optional: View forum.php;
+
+if (Click Forum?) then (yes)
+  if (Profile setup complete?) then (yes)
+    :Use forum.php;
+    :Submit topic (submit-topic.php);
+    :Submit reply (submit-reply.php);
+  else
+    :Redirect to setupHobby.php;
+    :Complete and submit hobbies/interests;
+    :Return to forum.php;
+    :Submit topic (submit-topic.php);
+    :Submit reply (submit-reply.php);
+  endif
+endif
+
+partition "Dashboard Access (dashboard.php)" {
+  if (User is admin?) then (yes)
+    :Upload test (admin-upload.php);
+    :Review pending resources (review-pending.php);
+  else
+    :Take official or training test (official-test.php / training-test.php);
+    :Preview old questions (resources.php);
+    :View result (result.php);
+  endif
+}
+
+stop
+@enduml

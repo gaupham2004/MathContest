@@ -1,0 +1,46 @@
+h1 {
+  margin-bottom: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-size: 16px;
+}
+
+.result-table th,
+.result-table td {
+  text-align: left;
+  padding: 16px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.result-table th {
+  background-color: #1e7a6f;
+  color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+
+.result-table td:last-child {
+  text-align: center;
+}
+
+.result-table button {
+  background-color: #1e7a6f;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}

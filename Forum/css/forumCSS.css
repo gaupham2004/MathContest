@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: #212529;
+}
+
+
+.postDiv {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.avatarAndTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatarAndTitle img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.avatarAndTitle input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.postContent {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.postContent textarea {
+  width: 100%;
+  border: none;
+  resize: vertical;
+  min-height: 40px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.postDiv button {
+  background-color: #0d3b66;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.postDiv button:hover {
+  background-color: #135592;
+}
+
+.postTable {
+  width: 100%;
+  max-width: 900px;
+  overflow-x: auto;
+}
+
+.postTable table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.headerTable th {
+  background-color: #0d3b66;
+  color: white;
+  padding: 12px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.postTable td {
+  padding: 12px;
+  border: 1px solid #999;
+  word-wrap: break-word;
+}
+
+.postTable tr:nth-child(even) {
+  background-color: #f3f9ff;
+}
+
+.postTable tr:hover td {
+  background-color: #e0f0ff;
+}
+
+.forumLayout {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.leftContent {
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.forumSidebar {
+  flex: 1 1 30%;
+  max-width: 300px;
+  margin-top: 30px;
+}
+
+.sidebarBox {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.sidebarBox h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #0d3b66;
+}
+
+.sidebarBox ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.sidebarBox li {
+  margin-bottom: 8px;
+}
+
+.forumBoard {
+  background-color: #0d3b66; 
+  color: #ffeb3b; 
+  padding: 20px 40px;
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-bottom: 5px solid #0d3b66;
+}
+
+.badge {
+  background-color: #135592;
+  color: white;
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.categoryFilter {
+  margin: 10px 0 20px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.postTable tr:hover {
+  cursor: pointer;
+  background-color: #d6eaff !important;
+}
+
+.postTable td:nth-child(3) {
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+.postTable td:nth-child(4) {
+  font-style: italic;
+  color: gray;
+}
+
+.originalPost, .replyBox {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.originalPost h2 {
+  margin-top: 0;
+  color: #0d3b66;
+}
+
+.originalPostDiv h1{
+  margin-bottom: 0;
+}
+.postMeta, .replyMeta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.replyBox p {
+  margin-bottom: 10px;
+}
+
+.replyLink {
+  color: #135592;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.replyLink:hover {
+  text-decoration: underline;
+}
+
+.replyForm h3 {
+  margin-top: 40px;
+  color: #0d3b66;
+}
+
+.replyForm textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.replyForm button {
+  background-color: #0d3b66;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.replyForm button:hover {
+  background-color: #135592;
+}

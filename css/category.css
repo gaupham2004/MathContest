@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.categoryDiv {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.category {
+    background-color: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.category img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.category-content {
+    padding: 20px;
+}
+.category-content h2 {
+    margin-top: 0;
+    color: #003366;
+}
+.category-content p {
+    margin: 10px 0;
+}
+.register-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cc0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.register-btn:hover {
+    background-color: #990000;
+}

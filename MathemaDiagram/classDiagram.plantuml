@@ -1,0 +1,145 @@
+@startuml
+
+class User {
+  +id: int
+  +name: string
+  +email: string
+  +password: string
+  +phone: string
+  +birthdate: date
+  +role: string
+  +category: string
+  +remember_me: boolean
+}
+
+class HobbyForum {
+  +id: int
+  +user_id: int
+  +hobby: string
+  +career: string
+  +education: string
+  +postTime: datetime
+}
+
+class ForumTopic {
+  +id: int
+  +title: string
+  +message: text
+  +author: string
+  +category: string
+  +postTime: datetime
+}
+
+class ForumReply {
+  +id: int
+  +topic_id: int
+  +message: text
+  +author: string
+  +postTime: datetime
+}
+
+class OfficialTest {
+  +id: int
+  +name: string
+  +category: string
+  +num_questions: int
+  +time_limit: int
+  +grade: string
+}
+
+
+class OfficialResult {
+  +id: int
+  +user_id: int
+  +test_id: int
+  +score: int
+  +total_questions: int
+  +date_taken: datetime
+}
+
+class OfficialQuestion {
+  +id: int
+  +test_id: int
+  +question_test: text
+  +option_a: text
+  +option_b: text
+  +option_c: text
+  +option_d: text
+  +correct_option: char
+}
+
+class TrainingTest {
+  +id: int
+  +name: string
+  +category: string
+  +num_questions: int
+  +grade: string
+}
+
+class TrainingQuestion {
+  +id: int
+  +training_id: int
+  +question_test: text
+  +option_a: text
+  +option_b: text
+  +option_c: text
+  +option_d: text
+  +correct_option: char
+}
+
+class TrainingResult {
+  +id: int
+  +user_id: int
+  +training_id: int
+  +score: int
+  +total_questions: int
+  +date_taken: datetime
+}
+
+class Resource {
+  +id: int
+  +title: string
+  +description: text
+  +filename: string
+  +category: string
+  +status: string
+  +uploaded_by: int
+  +uploaded_at: datetime
+}
+
+class Transaction {
+  +id: int
+  +user_id: int
+  +amount: decimal
+  +status: string
+  +created_at: datetime
+}
+
+class PaypalPayment {
+  +id: int
+  +transaction_id: int
+  +paypal_order_id: string
+  +payer_email: string
+  +payer_id: string
+  +captured_at: datetime
+}
+
+
+User "1" -- "0..1" HobbyForum
+User "1" -- "0..*" OfficialResult
+User "1" -- "0..*" TrainingResult
+User "1" -- "0..*" ForumTopic
+User "1" -- "0..*" ForumReply
+User "1" -- "0..*" Resource
+User "1" -- "0..*" Transaction
+Transaction "1" -- "0..1" PaypalPayment
+
+ForumTopic "1" -- "0..*" ForumReply
+
+OfficialTest "1" -- "0..*" OfficialQuestion
+OfficialTest "1" -- "0..*" OfficialResult
+
+TrainingTest "1" -- "0..*" TrainingQuestion
+TrainingTest "1" -- "0..*" TrainingResult
+
+@enduml
